@@ -27,8 +27,8 @@
 - name: Start Nginx
   ansible.builtin.systemd:
     state: restarted
-    name:
-    enabled: yes
+    name: nginx
+    enabled: true
 
 #script=$(realpath "$0")
 #script_path=$(dirname "$script")
