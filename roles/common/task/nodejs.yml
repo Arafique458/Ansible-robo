@@ -3,7 +3,7 @@
 
 - name: Install NodeJS
   ansbile.builtin.yum:
-    name: nodjs
+    name: nodejs
     state: installed
 
 - name: Include task
