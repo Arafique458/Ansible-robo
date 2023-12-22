@@ -3,8 +3,8 @@
     name: nginx
     state: latest
 
-- name: Copy file with owner and permissions
-  ansible.builtin.copy:
+- name: Copy roboshop Config File
+  ansible.builtin.templates:
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
 
