@@ -5,7 +5,7 @@
   when: schema_setup == "mongo" # this is Condition
 
 - name: Install MonogoDB Client
-  ansibile.builtin.yum:
+  ansible.builtin.yum:
     name: mongodb-org-shell
     state: installed
 
