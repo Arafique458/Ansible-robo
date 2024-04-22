@@ -1,6 +1,6 @@
 - name: Load MongoDB Schema
   when: schema_setup == "mongo" # this is Condition
-  ansible.builtin.block:
+  block:
     - name: copy MongoDB repo files
       ansible.builtin.copy:
         src: mongo.repo
